@@ -28,33 +28,3 @@ gulp.task('production', function() {
     ]
   )
 })
-
-
-///////////////
-
-// gulp.task('production:watch', ['browserSync'], function() {
-//   gulp.watch('src/jade/**', ['production:jade']);
-//   gulp.watch('src/sass/**', ['production:sass']);
-//   gulp.watch('src/coffee/**', ['production:coffee']);
-//   gulp.watch('src/bower/**', ['production:scripts', 'production:sass']);
-//   gulp.watch('src/img/**', ['imagemin']);
-//   gulp.watch('src/assets/**', ['assets']);
-//   gulp.watch('src/svg/**', ['svg', 'production:jade']);
-//   return gulp.watch('src/fonts/**/*', ['fonts']);
-// });
-
-// gulp.task('production', function() {
-//   return runSequence('clean',
-//     'production:scripts',
-//     'production:coffee',
-//     'fonts',
-//     'production:sass',
-//     'imagemin',
-//     'assets',
-//     'svg:inline',
-//     'svg:external',
-//     'production:jade',
-//     'production:watch');
-// });
-
-

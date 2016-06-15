@@ -7,7 +7,7 @@ var plugins = gulpLoadPlugins();
 var config = require('./config');
 
 gulp.task('sass', function() {
-  return gulp.src('./src/scss/**/*.scss')
+  return gulp.src('./src/scss/**/!(_)*.scss')
   .pipe(plugins.sourcemaps.init())
   .pipe(plugins.sass({
     includePaths: config.sassIncludes,
@@ -27,17 +27,18 @@ gulp.task('sass', function() {
 
 
 gulp.task('production:sass', function() {
-  return gulp.src('./src/scss/**/*.scss')
+  return gulp.src('./src/scss/**/!(_)*.scss')
   .pipe(plugins.sass({
-      includePaths: config.sassIncludes
-    }))
+    includePaths: config.sassIncludes,
+    outputStyle: 'compact'
+  }))
   .pipe(plugins.autoprefixer({
     browsers: ['last 2 versions']
   }))
-  .pipe(plugins.uncss({
-    html: config.uncssHtml,
-    ignore: config.uncssIgnore
-  }))
+  // .pipe(plugins.uncss({
+  //   html: config.uncssHtml,
+  //   ignore: config.uncssIgnore
+  // }))
   .pipe(plugins.groupCssMediaQueries())
   .pipe(plugins.csscomb())
   .pipe(plugins.cssnano())
