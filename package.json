@@ -1,0 +1,32 @@
+{
+  "name": "orugaframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "Juan Di Nella",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-accord": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cache": "*",
+    "gulp-cheerio": "*",
+    "gulp-concat": "*",
+    "gulp-csscomb": "*",
+    "gulp-cssfont64": "*",
+    "gulp-group-css-media-queries": "*",
+    "gulp-imagemin": "*",
+    "gulp-load-plugins": "*",
+    "gulp-newer": "*",
+    "gulp-plumber": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-svgmin": "*",
+    "gulp-svgstore": "*",
+    "jade": "*",
+    "require-dir": "*",
+    "run-sequence": "*"
+  }
+}

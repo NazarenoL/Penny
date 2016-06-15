@@ -1,0 +1,17 @@
+{
+  "name": "orugaframework",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Juan Di Nella <juan.dinella@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/juandinella/ground-zero",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+}
