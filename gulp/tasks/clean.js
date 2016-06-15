@@ -6,5 +6,5 @@ var cache = require('gulp-cache');
 
 
 gulp.task('clean:dist', function() {
-  del(['dist/**/*', '!dist/images', '!dist/images/**/*'])
-});
+  return del.sync('dist');
+})

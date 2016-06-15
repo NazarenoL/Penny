@@ -15,3 +15,15 @@ gulp.task('vendors', function() {
     stream: true
   }));
 });
+
+gulp.task('production:vendors', function() {
+  return gulp.src('src/js/vendors/*.js')
+  .pipe(plugins.concat('vendor.js'))
+  .pipe(plugins.uglify({
+    preserveComments: 'license'
+  }))
+  .pipe(gulp.dest('./dist/js'))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
+});

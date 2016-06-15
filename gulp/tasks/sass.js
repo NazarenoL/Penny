@@ -22,3 +22,19 @@ gulp.task('sass', function() {
     stream: true
   }));
 })
+
+
+gulp.task('production:sass', function() {
+  return gulp.src('./src/scss/**/*.scss')
+  .pipe(plugins.sass())
+  .pipe(plugins.autoprefixer({
+    browsers: ['last 2 versions']
+  }))
+  .pipe(plugins.groupCssMediaQueries())
+  .pipe(plugins.csscomb())
+  .pipe(plugins.cssnano())
+  .pipe(gulp.dest('./dist/css'))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
+});
