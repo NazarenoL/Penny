@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var gulpLoadPlugins = require('gulp-load-plugins');
 var browserSync = require('browser-sync');
 var plugins = gulpLoadPlugins();
+var config = require('./config');
 
 gulp.task('jade', function() {
   return gulp.src('./src/jade/**/!(_)*.jade')
@@ -11,11 +12,12 @@ gulp.task('jade', function() {
     pretty: true,
     basedir: '/src/jade'
   }))
-  .pipe(gulp.dest('./dist/'))
+  .pipe(gulp.dest(config.exportPath + '/'))
   .pipe(browserSync.reload({
     stream: true
   }));
 });
+
 
 //Production
 gulp.task('production:jade', function() {
@@ -23,8 +25,9 @@ gulp.task('production:jade', function() {
   .pipe(plugins.accord('jade', {
     basedir: './src/jade'
   }))
-  .pipe(gulp.dest('./dist/'))
+  .pipe(gulp.dest(config.exportPath + '/'))
   .pipe(browserSync.reload({
     stream: true
   }));
 });
+

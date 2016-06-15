@@ -6,12 +6,13 @@
     "Juan Di Nella <juan.dinella@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/juandinella/ground-zero",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
 }
+

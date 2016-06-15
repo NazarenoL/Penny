@@ -9,6 +9,7 @@ gulp.task('production:watch', ['browserSync'], function() {
   gulp.watch('src/jade/**', ['production:jade']);
   gulp.watch('src/scss/**/', ['production:sass']);
   gulp.watch('src/img/**', ['imagemin']);
+  gulp.watch('src/bower/**', ['production:scripts', 'production:sass']);
   gulp.watch('src/js/app/*.js', ['production:scripts']);
   return gulp.watch('src/fonts/**/*', ['fonts']);
 });

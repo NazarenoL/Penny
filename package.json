@@ -15,8 +15,8 @@
     "gulp-cheerio": "*",
     "gulp-concat": "*",
     "gulp-csscomb": "*",
-    "gulp-cssnano": "*",
     "gulp-cssfont64": "*",
+    "gulp-cssnano": "*",
     "gulp-group-css-media-queries": "*",
     "gulp-imagemin": "*",
     "gulp-load-plugins": "*",
@@ -26,8 +26,9 @@
     "gulp-sourcemaps": "*",
     "gulp-svgmin": "*",
     "gulp-svgstore": "*",
-    "jade": "*",
     "gulp-uglify": "*",
+    "gulp-uncss": "*",
+    "jade": "*",
     "require-dir": "*",
     "run-sequence": "*"
   }

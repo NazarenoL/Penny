@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var gulpLoadPlugins = require('gulp-load-plugins');
 var browserSync = require('browser-sync');
 var plugins = gulpLoadPlugins();
+var config = require('./config');
 
 gulp.task('imagemin', function() {
   return gulp.src('src/img/**/*')
@@ -18,7 +19,7 @@ gulp.task('imagemin', function() {
       }
     ]
   }))
-  .pipe(gulp.dest('./dist/img'))
+  .pipe(gulp.dest(config.exportPath + '/img/'))
   .pipe(browserSync.reload({
     stream: true
   }));

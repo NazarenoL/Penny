@@ -4,11 +4,13 @@ var gulp = require('gulp');
 var gulpLoadPlugins = require('gulp-load-plugins');
 var browserSync = require('browser-sync');
 var plugins = gulpLoadPlugins();
+var config = require('./config');
 
 gulp.task('sass', function() {
   return gulp.src('./src/scss/**/*.scss')
   .pipe(plugins.sourcemaps.init())
   .pipe(plugins.sass({
+    includePaths: config.sassIncludes,
     outputStyle: 'compact'
   }))
   .pipe(plugins.autoprefixer({
@@ -17,7 +19,7 @@ gulp.task('sass', function() {
   .pipe(plugins.groupCssMediaQueries())
   .pipe(plugins.csscomb())
   .pipe(plugins.sourcemaps.write('./'))
-  .pipe(gulp.dest('./dist/css'))
+  .pipe(gulp.dest(config.exportPath + '/css/'))
   .pipe(browserSync.reload({
     stream: true
   }));
@@ -26,14 +28,20 @@ gulp.task('sass', function() {
 
 gulp.task('production:sass', function() {
   return gulp.src('./src/scss/**/*.scss')
-  .pipe(plugins.sass())
+  .pipe(plugins.sass({
+      includePaths: config.sassIncludes
+    }))
   .pipe(plugins.autoprefixer({
     browsers: ['last 2 versions']
+  }))
+  .pipe(plugins.uncss({
+    html: config.uncssHtml,
+    ignore: config.uncssIgnore
   }))
   .pipe(plugins.groupCssMediaQueries())
   .pipe(plugins.csscomb())
   .pipe(plugins.cssnano())
-  .pipe(gulp.dest('./dist/css'))
+  .pipe(gulp.dest(config.exportPath + '/css/'))
   .pipe(browserSync.reload({
     stream: true
   }));
