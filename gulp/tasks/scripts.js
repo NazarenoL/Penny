@@ -6,7 +6,7 @@ var browserSync = require('browser-sync');
 var plugins = gulpLoadPlugins();
 
 gulp.task('scripts', function() {
-  return gulp.src('src/js/*.js')
+  return gulp.src('src/js/app/*.js')
   .pipe(plugins.sourcemaps.init())
   .pipe(plugins.concat('app.js'))
   .pipe(plugins.sourcemaps.write('./'))

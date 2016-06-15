@@ -5,11 +5,6 @@ var del = require('del');
 var cache = require('gulp-cache');
 
 
-gulp.task('clean', function() {
-  del('dist');
-  return cache.clearAll();
-})
-
 gulp.task('clean:dist', function() {
   del(['dist/**/*', '!dist/images', '!dist/images/**/*'])
 });

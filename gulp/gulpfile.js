@@ -21,16 +21,17 @@ gulp.task('browserSync', function() {
 })
 
 
-gulp.task('watch', function() {
+
+gulp.task('watch', ['browserSync'], function() {
   gulp.watch('src/jade/**', ['jade']);
-  gulp.watch('src/scss/**/*.scss', ['sass']);
-  gulp.watch('src/js/*.js', ['scripts']);
-  gulp.watch('src/img/**/*', ['imagemin']);
-  gulp.watch('src/fonts//*.otf', ['fonts']);
+  gulp.watch('src/scss/**/', ['sass']);
+  gulp.watch('src/js/app/*.js', ['scripts']);
+  gulp.watch('src/img/**', ['imagemin']);
+  gulp.watch('src/fonts/**/*', ['fonts']);
 })
 
 
-gulp.task('default', function(callback) {
+gulp.task('default', function() {
   runSequence([
     'clean:dist',
     'sass',
