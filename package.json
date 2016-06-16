@@ -1,7 +1,7 @@
 {
   "name": "orugaframework",
-  "version": "1.0.0",
-  "description": "The best way to starta frontend project",
+  "version": "0.0.1",
+  "description": "The best way to start a frontend project",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
