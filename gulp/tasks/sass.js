@@ -35,10 +35,10 @@ gulp.task('production:sass', function() {
   .pipe(plugins.autoprefixer({
     browsers: ['last 2 versions']
   }))
-  // .pipe(plugins.uncss({
-  //   html: config.uncssHtml,
-  //   ignore: config.uncssIgnore
-  // }))
+  .pipe(plugins.uncss({
+    html: config.uncssHtml,
+    ignore: config.uncssIgnore
+  }))
   .pipe(plugins.groupCssMediaQueries())
   .pipe(plugins.csscomb())
   .pipe(plugins.cssnano())
