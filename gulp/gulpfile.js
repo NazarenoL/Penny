@@ -27,6 +27,7 @@ gulp.task('watch', ['browserSync'], function() {
   gulp.watch('src/scss/**', ['sass']);
   gulp.watch('src/bower/**', ['scripts', 'sass']);
   gulp.watch('src/js/*.js', ['scripts']);
+  gulp.watch('src/assets/**', ['assets']);
   gulp.watch('src/img/**', ['imagemin']);
   gulp.watch('src/svg/**', ['svg', 'jade']);
   gulp.watch('src/fonts/**/*', ['fonts']);
@@ -39,6 +40,7 @@ gulp.task('default', function() {
     'sass',
     'vendors',
     'scripts',
+    'assets',
     'imagemin',
     'fonts',
     'jade',

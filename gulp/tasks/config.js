@@ -21,5 +21,8 @@ module.exports = {
     './src/fonts/*.otf',
     './src/fonts/*.ttf'
     ],
+
+  assets: ['./src/assets/**/*'],
+
   exportPath: ['./dist']
 };
