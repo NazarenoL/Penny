@@ -1,10 +1,23 @@
 {
   "name": "orugaframework",
   "version": "1.0.0",
-  "description": "",
+  "description": "The best way to starta frontend project",
   "main": "gulpfile.js",
-  "author": "Juan Di Nella",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juandinella/orugaframework"
+  },
+  "keywords": [
+    "jade",
+    "js",
+    "sass",
+    "gulp"
+  ],
+  "author": "Juan Di Nella @orugacontenta",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juandinella/orugaframework/issues"
+  },
   "devDependencies": {
     "browser-sync": "*",
     "del": "*",

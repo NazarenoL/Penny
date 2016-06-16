@@ -6,7 +6,7 @@ var browserSync = require('browser-sync');
 var plugins = gulpLoadPlugins();
 var config = require('./config');
 
-
+//Assets that you don't need to process
 gulp.task('assets', function() {
   return gulp.src(config.assets)
   .pipe(gulp.dest(config.exportPath + '/assets/'))

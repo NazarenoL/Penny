@@ -4,10 +4,9 @@ var gulp = require('gulp');
 var gulpLoadPlugins = require('gulp-load-plugins');
 var plugins = gulpLoadPlugins();
 var config = require('./config');
-
 var critical = require('critical').stream;
 
-
+//Critical path -> Inline and minify into new html
 gulp.task('critical', function () {
   return gulp.src('./dist/*.html')
   .pipe(critical({
@@ -26,5 +25,5 @@ gulp.task('critical', function () {
       height: 960
     }],
     css: ['dist/css/styles.css']}))
-  .pipe(gulp.dest(config.exportPath + '/'))
+  .pipe(gulp.dest(config.exportPath + '/critical'))
 });

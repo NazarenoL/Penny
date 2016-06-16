@@ -1,3 +1,5 @@
+//Config Paths
+
 module.exports = {
   // Here you add the paths to the scss files you get with Bower to import and work with.
   sassIncludes: [],
