@@ -22,6 +22,7 @@ gulp.task('production', function() {
     'production:vendors',
     'production:scripts',
     'fonts',
+    'assets',
     'imagemin',
     'production:sass',
     'production:watch'
