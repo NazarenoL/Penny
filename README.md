@@ -1,9 +1,7 @@
-#El Framework que usa alf
+#Penny Framework
+### tiny but powerful
 
-##Like a Framework, but better
-
-###Like an Alf, but better
-
+![PennyFramework](Penny.png)
 ===
 
 ### Pre-Install

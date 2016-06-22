@@ -6,7 +6,6 @@ var browserSync = require('browser-sync');
 var plugins = gulpLoadPlugins();
 var config = require('./config');
 
-
 gulp.task('sass', function() {
   return gulp.src('./src/scss/**/!(_)*.scss')
   .pipe(plugins.plumber({

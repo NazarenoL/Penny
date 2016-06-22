@@ -1,6 +1,6 @@
 {
-  "name": "orugaframework",
-  "version": "0.0.1",
+  "name": "PennyFramework",
+  "version": "0.0.2",
   "description": "The best way to start a frontend project",
   "main": "gulpfile.js",
   "repository": {
