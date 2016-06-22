@@ -1,7 +1,8 @@
-#Penny Framework
+![PennyFramework](Penny.png)
+
+##Penny Framework
 ### tiny but powerful
 
-![PennyFramework](Penny.png)
 ===
 
 ### Pre-Install
