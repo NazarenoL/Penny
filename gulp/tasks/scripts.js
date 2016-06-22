@@ -8,6 +8,12 @@ var config = require('./config');
 
 gulp.task('scripts', function() {
   return gulp.src('src/js/*.js')
+  .pipe(plugins.plumber({
+    errorHandler: function (err) {
+      console.log(err);
+      this.emit('end');
+    }
+  }))
   .pipe(plugins.sourcemaps.init())
   .pipe(plugins.concat('app.js'))
   .pipe(plugins.sourcemaps.write('./'))

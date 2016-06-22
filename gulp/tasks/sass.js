@@ -6,8 +6,15 @@ var browserSync = require('browser-sync');
 var plugins = gulpLoadPlugins();
 var config = require('./config');
 
+
 gulp.task('sass', function() {
   return gulp.src('./src/scss/**/!(_)*.scss')
+  .pipe(plugins.plumber({
+    errorHandler: function (err) {
+      console.log(err);
+      this.emit('end');
+    }
+  }))
   .pipe(plugins.sourcemaps.init())
   .pipe(plugins.sass({
     includePaths: config.sassIncludes,

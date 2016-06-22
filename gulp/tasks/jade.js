@@ -8,6 +8,12 @@ var config = require('./config');
 
 gulp.task('jade', function() {
   return gulp.src('./src/jade/**/!(_)*.jade')
+  .pipe(plugins.plumber({
+    errorHandler: function (err) {
+      console.log(err);
+      this.emit('end');
+    }
+  }))
   .pipe(plugins.accord('jade', {
     pretty: true,
     basedir: '/src/jade'

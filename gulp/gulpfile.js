@@ -20,8 +20,6 @@ gulp.task('browserSync', function() {
   })
 })
 
-
-
 gulp.task('watch', ['browserSync'], function() {
   gulp.watch('src/jade/**', ['jade']);
   gulp.watch('src/scss/**', ['sass']);

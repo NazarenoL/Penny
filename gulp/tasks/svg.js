@@ -7,6 +7,12 @@ var plugins = gulpLoadPlugins();
 
 gulp.task('svg', function() {
   return gulp.src('./src/svg/*.svg')
+  .pipe(plugins.plumber({
+    errorHandler: function (err) {
+      console.log(err);
+      this.emit('end');
+    }
+  }))
   .pipe(plugins.svgmin()).pipe(plugins.svgstore({
     fileName: 'symbols.svg',
     inlineSvg: true

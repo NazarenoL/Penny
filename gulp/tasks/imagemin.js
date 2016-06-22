@@ -8,6 +8,12 @@ var config = require('./config');
 
 gulp.task('imagemin', function() {
   return gulp.src('src/img/**/*')
+  .pipe(plugins.plumber({
+    errorHandler: function (err) {
+      console.log(err);
+      this.emit('end');
+    }
+  }))
   .pipe(plugins.newer('./dist/img'))
   .pipe(plugins.imagemin({
     progressive: true,
