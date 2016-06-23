@@ -3,7 +3,7 @@
 
 #### Tiny but powerful
 
-->Many thanks to [**@mpalau**](http:///twitter.com/mpalau) & [**@necsoft**](http:///twitter.com/necsoft) <-
+Many thanks to [**@mpalau**](http:///twitter.com/mpalau) & [**@necsoft**](http:///twitter.com/necsoft)
 
 ===
 
