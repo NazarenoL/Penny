@@ -1,5 +1,6 @@
 $breakpoints: (
-  'small':  767px,
-  'medium': 992px,
-  'large':  1200px
+  'phablet'     : 480px,
+  'tablet'      : 768px,
+  'laptop'      : 992px,
+  'desktop'     : 1200px
 ) !default;
