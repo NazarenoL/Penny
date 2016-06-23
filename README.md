@@ -1,9 +1,13 @@
 ![PennyFramework](Penny.png)
 
-##Penny Framework
-### tiny but powerful
+
+#### Tiny but powerful
+
+->Many thanks to [**@mpalau**](http:///twitter.com/mpalau) & [**@necsoft**](http:///twitter.com/necsoft) <-
 
 ===
+
+The true is that **Penny** isn't a framework (yet), but it's the best way to start a frontend project
 
 ### Pre-Install
 

@@ -1,11 +1,11 @@
 {
-  "name": "PennyFramework",
+  "name": "Penny",
   "version": "0.0.2",
   "description": "The best way to start a frontend project",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/juandinella/orugaframework"
+    "url": "https://github.com/juandinella/penny"
   },
   "keywords": [
     "jade",
@@ -16,7 +16,7 @@
   "author": "Juan Di Nella @orugacontenta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/juandinella/orugaframework/issues"
+    "url": "https://github.com/juandinella/penny/issues"
   },
   "devDependencies": {
     "browser-sync": "*",
