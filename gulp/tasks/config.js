@@ -2,11 +2,14 @@
 
 module.exports = {
   // Here you add the paths to the scss files you get with Bower to import and work with.
-  sassIncludes: [],
+  sassIncludes: [
+  './src/bower/penny-mixins/src'
+  ],
 
   // Here you add the paths to the full-length js files from your Bower imports
   scriptFiles: [
-    './src/bower/jquery/dist/jquery.js'
+    './src/bower/jquery/dist/jquery.js',
+
     ],
 
   // Html Files to go through UNCSS to remove unused declarations etc but...

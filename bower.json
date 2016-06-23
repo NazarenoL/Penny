@@ -12,7 +12,8 @@
     "bower_components"
   ],
   "dependencies": {
-    "jquery": "^2.2.2"
+    "jquery": "^2.2.2",
+    "penny-mixins": "*"
   }
 }
 
