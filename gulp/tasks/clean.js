@@ -8,3 +8,7 @@ var cache = require('gulp-cache');
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 })
+
+gulp.task('clean:git', function() {
+  return clean(['./.git']);
+});
