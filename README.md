@@ -18,7 +18,7 @@ brew install node
 ```
 - After NPM installation, we need to install our global dependencies with the next command (**This is only necessary to do once in a lifetime**)
 ```
-npm install -g gulp browser-sync npm-cache bower
+npm run firstTime
 ```
 
 
@@ -27,7 +27,7 @@ npm install -g gulp browser-sync npm-cache bower
 Browse to the root folder of the project and then run
 
 ```
-npm-cache install bower npm
+npm run getReady
 ```
 
 

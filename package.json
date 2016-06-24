@@ -18,6 +18,12 @@
   "bugs": {
     "url": "https://github.com/juandinella/penny/issues"
   },
+  "scripts": {
+    "test": "gulp test",
+    "firstTime": "npm install -g gulp browser-sync npm-cache bower",
+    "getReady": "npm-cache install bower npm",
+    "start": "gulp"
+  },
   "devDependencies": {
     "browser-sync": "*",
     "critical": "*",
