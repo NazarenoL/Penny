@@ -16,8 +16,7 @@ gulp.task('sass', function() {
   }))
   .pipe(plugins.sourcemaps.init())
   .pipe(plugins.sass({
-    includePaths: config.sassIncludes,
-    outputStyle: 'compact'
+    includePaths: config.sassIncludes
   }))
   .pipe(plugins.autoprefixer({
     browsers: ['last 2 versions']

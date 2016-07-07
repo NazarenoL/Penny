@@ -6,7 +6,7 @@ var runSequence = require('run-sequence').use(gulp);
 
 
 gulp.task('production:watch', ['browserSync'], function() {
-  gulp.watch('src/jade/**', ['production:jade']);
+  gulp.watch('src/pug/**', ['production:pug']);
   gulp.watch('src/scss/**/', ['production:sass']);
   gulp.watch('src/img/**', ['imagemin']);
   gulp.watch('src/bower/**', ['production:scripts', 'production:sass']);
@@ -18,7 +18,7 @@ gulp.task('production:watch', ['browserSync'], function() {
 gulp.task('production', function() {
   runSequence([
     'clean:dist',
-    'production:jade',
+    'production:pug',
     'production:vendors',
     'production:scripts',
     'fonts',

@@ -6,15 +6,16 @@ var browserSync = require('browser-sync');
 var plugins = gulpLoadPlugins();
 var config = require('./config');
 
-gulp.task('jade', function() {
-  return gulp.src('./src/jade/**/!(_)*.jade')
+
+gulp.task('pug', function() {
+  return gulp.src('./src/pug/**/!(_)*.pug')
   .pipe(plugins.plumber({
     errorHandler: function (err) {
       console.log(err);
       this.emit('end');
     }
   }))
-  .pipe(plugins.accord('jade', {
+  .pipe(plugins.pug({
     pretty: true,
     basedir: '/src/jade'
   }))
@@ -24,12 +25,11 @@ gulp.task('jade', function() {
   }));
 });
 
-
 //Production
-gulp.task('production:jade', function() {
-  return gulp.src('./src/jade/**/!(_)*.jade')
-  .pipe(plugins.accord('jade', {
-    basedir: './src/jade'
+gulp.task('production:pug', function() {
+  return gulp.src('./src/pug/**/!(_)*.pug')
+  .pipe(plugins.pug({
+    basedir: './src/pug'
   }))
   .pipe(gulp.dest(config.exportPath + '/'))
   .pipe(browserSync.reload({

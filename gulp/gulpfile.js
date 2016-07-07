@@ -21,13 +21,13 @@ gulp.task('browserSync', function() {
 })
 
 gulp.task('watch', ['browserSync'], function() {
-  gulp.watch('src/jade/**', ['jade']);
+  gulp.watch('src/pug/**', ['pug']);
   gulp.watch('src/scss/**', ['sass']);
   gulp.watch('src/bower/**', ['scripts', 'sass']);
   gulp.watch('src/js/*.js', ['scripts']);
   gulp.watch('src/assets/**', ['assets']);
   gulp.watch('src/img/**', ['imagemin']);
-  gulp.watch('src/svg/**', ['svg', 'jade']);
+  gulp.watch('src/svg/**', ['svg', 'pug']);
   gulp.watch('src/fonts/**/*', ['fonts']);
 })
 
@@ -41,7 +41,7 @@ gulp.task('default', function() {
     'assets',
     'imagemin',
     'fonts',
-    'jade',
+    'pug',
     'svg',
     'browserSync',
     'watch'
