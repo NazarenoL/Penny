@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+// Sets the base font-size to the base to use nicely on REM units
+html{
+  font-size: 62.5%;
+}
+
+body{
+  @include font-size(1.6);
+}
+
 ::selection{
   background: lighten($main-color, 12%);
   color: $white;
