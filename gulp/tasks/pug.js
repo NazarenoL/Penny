@@ -6,16 +6,6 @@ var browserSync = require('browser-sync');
 var plugins = gulpLoadPlugins();
 var config = require('./config');
 
-var devLocals = {
-  production: false,
-  base: '/'
-};
-
-var prodLocals = {
-  production: true,
-  base: config.productionBase
-};
-
 gulp.task('pug', function() {
   return gulp.src('./src/pug/**/!(_)*.pug')
   .pipe(plugins.plumber({
