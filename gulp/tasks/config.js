@@ -1,6 +1,7 @@
 //Config Paths
 
 module.exports = {
+  productionBase:['/'],
   // Here you add the paths to the scss files you get with Bower to import and work with.
   sassIncludes: [
   './src/bower/penny-mixins/src'
