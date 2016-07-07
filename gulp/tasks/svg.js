@@ -24,5 +24,5 @@ gulp.task('svg', function() {
     parserOptions: {
       xmlMode: true
     }
-  })).pipe(gulp.dest('./src/jade/layouts/includes'));
+  })).pipe(gulp.dest('./src/pug/layouts/includes'));
 });
