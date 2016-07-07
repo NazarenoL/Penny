@@ -16,8 +16,7 @@ gulp.task('pug', function() {
   }))
   .pipe(plugins.pug({
     pretty: true,
-    basedir: './src/jade',
-    locals: devLocals
+    basedir: '/src/jade'
   }))
   .pipe(gulp.dest(config.exportPath + '/'))
   .pipe(browserSync.reload({
@@ -30,7 +29,6 @@ gulp.task('production:pug', function() {
   return gulp.src('./src/pug/**/!(_)*.pug')
   .pipe(plugins.pug({
     basedir: './src/pug',
-    locals: prodLocals
   }))
   .pipe(gulp.dest(config.exportPath + '/'))
   .pipe(browserSync.reload({
