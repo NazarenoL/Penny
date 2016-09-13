@@ -19,10 +19,11 @@
     "url": "https://github.com/juandinella/penny/issues"
   },
   "scripts": {
-    "test": "gulp test",
-    "firstTime": "npm install -g gulp browser-sync npm-cache bower",
-    "getReady": "npm-cache install bower npm",
-    "start": "gulp"
+    "test": "NODE_ENV=test mocha",
+    "start": "npm i && bower i",
+    "deploy": "gulp deploy",
+    "gulp": "gulp",
+    "build": "gulp build"
   },
   "devDependencies": {
     "browser-sync": "*",
