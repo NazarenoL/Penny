@@ -24,8 +24,8 @@ gulp.task('pug', function() {
   }));
 });
 
-//Production
-gulp.task('production:pug', function() {
+//Build
+gulp.task('build:pug', function() {
   return gulp.src('./src/pug/**/!(_)*.pug')
   .pipe(plugins.pug({
     basedir: './src/pug',
@@ -35,4 +35,3 @@ gulp.task('production:pug', function() {
     stream: true
   }));
 });
-

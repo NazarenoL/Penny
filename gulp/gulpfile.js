@@ -28,7 +28,6 @@ gulp.task('watch', ['browserSync'], function() {
   gulp.watch('src/assets/**', ['assets']);
   gulp.watch('src/img/**', ['imagemin']);
   gulp.watch('src/svg/**', ['svg', 'pug']);
-  gulp.watch('src/fonts/**/*', ['fonts']);
 })
 
 
@@ -40,7 +39,6 @@ gulp.task('default', function() {
     'scripts',
     'assets',
     'imagemin',
-    'fonts',
     'pug',
     'svg',
     'browserSync',

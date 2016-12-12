@@ -24,7 +24,7 @@ gulp.task('scripts', function() {
 });
 
 
-gulp.task('production:scripts', function() {
+gulp.task('build:scripts', function() {
   return gulp.src('src/js/*.js')
   .pipe(plugins.concat('app.js'))
   .pipe(plugins.uglify({

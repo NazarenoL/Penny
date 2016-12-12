@@ -24,7 +24,7 @@ gulp.task('vendors', function() {
 });
 
 
-gulp.task('production:vendors', function() {
+gulp.task('build:vendors', function() {
   return gulp.src(config.scriptFiles)
   .pipe(plugins.concat('vendor.js'))
   .pipe(plugins.uglify({

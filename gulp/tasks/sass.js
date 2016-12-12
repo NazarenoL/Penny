@@ -31,7 +31,7 @@ gulp.task('sass', function() {
 })
 
 
-gulp.task('production:sass', function() {
+gulp.task('build:sass', function() {
   return gulp.src('./src/scss/**/!(_)*.scss')
   .pipe(plugins.sass({
     includePaths: config.sassIncludes,
