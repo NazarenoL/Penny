@@ -42,7 +42,3 @@ npm run getReady
 
 ## Features
 - **SVG Power!**: Drop svg images in 'svg' folder and, as if by magic (No really, there's a gulp task for that) it will generate 1 file with all of them.
-
-- **Custom fonts Base64** Yeap! Put yours fonts in the 'fonts' folder and drink a beer 🍺
-
-
