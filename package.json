@@ -19,12 +19,12 @@
     "url": "https://github.com/juandinella/penny/issues"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha",
+    "test": "gulp test",
     "start": "npm i && bower i",
-    "deploy": "gulp deploy",
     "gulp": "gulp",
     "build": "gulp build"
   },
+
   "devDependencies": {
     "browser-sync": "*",
     "critical": "*",
@@ -37,7 +37,6 @@
     "gulp-csscomb": "*",
     "gulp-cssfont64": "*",
     "gulp-cssnano": "*",
-    "gulp-gh-pages": "*",
     "gulp-group-css-media-queries": "*",
     "gulp-imagemin": "*",
     "gulp-load-plugins": "*",
