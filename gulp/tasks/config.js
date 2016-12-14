@@ -27,7 +27,9 @@ module.exports = {
     ],
 
   //Asset File Paths
-  assets: ['./src/assets/**/*'],
+  assets: [
+    './src/assets/**/*'
+  ],
 
   //Export path
   exportPath: ['./dist']

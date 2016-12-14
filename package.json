@@ -47,7 +47,7 @@
     "gulp-svgmin": "*",
     "gulp-svgstore": "*",
     "gulp-uglify": "*",
-    "gulp-uncss": "*",
+    "gulp-purifycss": "*",
     "gulp-pug": "*",
     "require-dir": "*",
     "run-sequence": "*"
