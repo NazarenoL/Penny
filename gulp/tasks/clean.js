@@ -10,5 +10,5 @@ gulp.task('clean:dist', function() {
 })
 
 gulp.task('clean:git', function() {
-  return clean(['./.git']);
+  return del.sync('./.git');
 });
