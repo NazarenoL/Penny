@@ -11,14 +11,10 @@ module.exports = {
     './src/bower/jquery/dist/jquery.js',
     ],
 
-  // Html Files to go through UNCSS to remove unused declarations etc but...
-  uncssHtml: [
-    './dist/index.html'
-    ],
-  // ... remember to add your non-html classes here like a class toggled by js/jQuery
-  uncssIgnore: [
-    ''
-    ],
+  purify: [
+    './dist/**/*.html',
+    './dist/**/*.js'
+  ],
 
   //Paths to our font files
   fonts: [
