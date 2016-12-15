@@ -11,10 +11,6 @@ module.exports = {
     './src/bower/jquery/dist/jquery.js',
     ],
 
-  purify: [
-    './dist/**/*.html',
-    './dist/**/*.js'
-  ],
 
   //Paths to our font files
   fonts: [
