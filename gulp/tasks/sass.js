@@ -30,7 +30,7 @@ gulp.task('sass', function() {
   }));
 })
 
-
+// Build
 gulp.task('build:sass', function() {
   return gulp.src('./src/scss/**/!(_)*.scss')
   .pipe(plugins.sass({

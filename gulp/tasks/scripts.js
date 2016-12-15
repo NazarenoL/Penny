@@ -23,7 +23,7 @@ gulp.task('scripts', function() {
   }));
 });
 
-
+// Build
 gulp.task('build:scripts', function() {
   return gulp.src('src/js/*.js')
   .pipe(plugins.concat('app.js'))

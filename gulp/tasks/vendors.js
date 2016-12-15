@@ -23,7 +23,7 @@ gulp.task('vendors', function() {
   }));
 });
 
-
+// Build
 gulp.task('build:vendors', function() {
   return gulp.src(config.scriptFiles)
   .pipe(plugins.concat('vendor.js'))

@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "start": "npm i && bower i",
+    "start": "yarn i && bower i",
     "gulp": "gulp",
     "build": "gulp build"
   },
