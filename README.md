@@ -15,7 +15,7 @@ The truth is that **Penny** isn't a framework (yet), but it's the best way to st
 ## Install
 
 ```
-npm start
+yarn start
 ```
 
 ## Usage

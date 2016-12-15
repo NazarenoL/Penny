@@ -1,6 +1,6 @@
 {
   "name": "penny",
-  "version": "0.0.5",
+  "version": "0.0.5z",
   "description": "The best way to start a frontend project",
   "main": "gulpfile.js",
   "repository": {
