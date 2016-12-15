@@ -10,7 +10,7 @@ The truth is that **Penny** isn't a framework (yet), but it's the best way to st
 
 ## Requirements
 - NodeJS (Recommended 4.5.0)
-- npm (Recommended 3.10.6)
+- yarn (Recommended 0.17.1)
 
 ## Install
 
