@@ -1,4 +1,4 @@
-![PennyFramework](Penny.png)
+![PennyFramework](penny.png)
 
 
 #### Tiny but powerful
@@ -7,7 +7,7 @@ Many thanks to [**@mpalau**](http:///twitter.com/mpalau) & [**@necsoft**](http:/
 
 ===
 
-The true is that **Penny** isn't a framework (yet), but it's the best way to start a frontend project
+The truth is that **Penny** isn't a framework (yet), but it's the best way to start a frontend project
 
 ## Requirements
 - NodeJS (Recommended 4.5.0)
