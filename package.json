@@ -1,6 +1,6 @@
 {
   "name": "penny",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The best way to start a frontend project",
   "main": "gulpfile.js",
   "repository": {
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "start": "yarn i && bower i",
+    "start": "yarn && bower i",
     "gulp": "gulp",
     "build": "gulp build"
   },

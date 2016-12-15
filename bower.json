@@ -1,5 +1,5 @@
 {
-  "name": "Penny",
+  "name": "penny",
   "description": "",
   "main": "",
   "authors": [
@@ -16,4 +16,3 @@
     "penny-mixins": "*"
   }
 }
-
