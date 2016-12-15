@@ -27,6 +27,7 @@
 
   "devDependencies": {
     "browser-sync": "*",
+    "critical": "*",
     "del": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",

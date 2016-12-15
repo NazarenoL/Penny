@@ -25,5 +25,5 @@ gulp.task('critical', function () {
       height: 960
     }],
     css: ['dist/css/styles.css']}))
-  .pipe(gulp.dest(config.exportPath + '/critical'))
+  .pipe(gulp.dest('./compressed'))
 });
