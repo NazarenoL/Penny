@@ -40,9 +40,6 @@ gulp.task('build:sass', function() {
   .pipe(plugins.autoprefixer({
     browsers: ['last 2 versions']
   }))
-  
-
-  .pipe(plugins.purifycss(config.purify))
   .pipe(plugins.groupCssMediaQueries())
   .pipe(plugins.csscomb())
   .pipe(plugins.cssnano())

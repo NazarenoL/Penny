@@ -1,6 +1,6 @@
 {
   "name": "penny",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The best way to start a frontend project",
   "main": "gulpfile.js",
   "repository": {
@@ -27,7 +27,6 @@
 
   "devDependencies": {
     "browser-sync": "*",
-    "critical": "*",
     "del": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
@@ -35,7 +34,6 @@
     "gulp-cheerio": "*",
     "gulp-concat": "*",
     "gulp-csscomb": "*",
-    "gulp-cssfont64": "*",
     "gulp-cssnano": "*",
     "gulp-group-css-media-queries": "*",
     "gulp-imagemin": "*",
@@ -47,7 +45,6 @@
     "gulp-svgmin": "*",
     "gulp-svgstore": "*",
     "gulp-uglify": "*",
-    "gulp-purifycss": "*",
     "gulp-pug": "*",
     "require-dir": "*",
     "run-sequence": "*"
