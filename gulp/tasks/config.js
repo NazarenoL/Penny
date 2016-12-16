@@ -11,12 +11,6 @@ module.exports = {
     './src/bower/jquery/dist/jquery.js',
     ],
 
-  //Paths to our font files
-  fonts: [
-    './src/fonts/*.otf',
-    './src/fonts/*.ttf'
-    ],
-
   //Asset File Paths
   assets: [
     './src/assets/**/*'
