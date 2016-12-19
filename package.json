@@ -19,7 +19,6 @@
     "url": "https://github.com/juandinella/penny/issues"
   },
   "scripts": {
-    "test": "gulp test",
     "install": "bower install",
     "start": "gulp",
     "build": "gulp build"
