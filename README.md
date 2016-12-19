@@ -15,13 +15,13 @@ The truth is that **Penny** isn't a framework (yet), but it's the best way to st
 ## Install
 
 ```
-yarn start
+yarn
 ```
 
 ## Usage
 
 ```
-gulp
+yarn start
 ```
 - This will run everything on development mode (source maps, expanded, etc)
 

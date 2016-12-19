@@ -20,8 +20,8 @@
   },
   "scripts": {
     "test": "gulp test",
-    "start": "yarn && bower i",
-    "gulp": "gulp",
+    "install": "bower install",
+    "start": "gulp",
     "build": "gulp build"
   },
 
